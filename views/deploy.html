@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ticket</title>
+    </head>
+    <body>
+        <header>
+            <h1>Deploy Ticket</h1>
+        </header>
+        <div>
+            <p>We are here to deploy the ticket contract</p>
+        </div>
+        <button id="connectButton">Connect</button>
+        <form action="/deploy" method="POST">
+            <label for="ethAmount">ETH Amount</label>
+            <input id="ethAmount" placeholder="0.1" type="number" name="amount" />
+            <button type="submit" id="deployButton">Deploy</button>
+        </form>
+        <div>
+            <p id="accountAddress"></p>
+        </div>
+    </body>
+    <script src="./index.js" type="text/javascript"></script>
+</html>
